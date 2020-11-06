@@ -11,10 +11,10 @@ class SideBar extends Component {
     return (
       <div className='slide-bar'>
         <div>
-          <div style={{padding: '5px'}}>
+          <div style={{padding: '12px'}}>
             <Link style={{ textDecoration: 'none' }} to='/'><img src={home} alt="Logo" /></Link>
           </div>
-          <div style={{padding: '5px'}}>
+          <div style={{padding: '12px'}}>
             <Link style={{ textDecoration: 'none' }} to='/about'><img src={about} alt="Logo" /></Link>
           </div>
         </div>
