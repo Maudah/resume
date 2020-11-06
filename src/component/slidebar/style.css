@@ -3,7 +3,22 @@
   border-right: 1px solid rosybrown ;
   display: block;
   height: 100vh;
+  flex-direction: column;
 }
+
+
+@media screen and (max-width: 480px) {
+  .slide-bar{
+    background-color: #141414;
+    border-bottom: 1px solid rosybrown ;
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    flex-direction: row;
+  }
+}
+
+
 .slide-bar-icon{
   width: 10px;
   height: 10px;;
