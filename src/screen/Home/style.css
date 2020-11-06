@@ -1,0 +1,14 @@
+.home-page-container{
+  height: 100vm;
+  overflow: hidden;
+
+}
+.home-page-video{
+  width: 100vw;
+  /* height: 100vh;  */
+  overflow: hidden;
+  position: fixed;
+}
+home-page-container::-webkit-scrollbar {
+  display: none;
+}
