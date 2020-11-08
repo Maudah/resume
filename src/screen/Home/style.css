@@ -1,22 +1,36 @@
 .home-page-container{
-  height: 100vm;
   overflow: hidden;
-
+  height: 100vh;
 }
 .home-page-video{
+  max-width: 100vw;
+  min-height: 100vh; 
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .home-page-video {
   min-width: 100vw;
   min-height: 100vh; 
   overflow: hidden;
-  position: fixed;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  }
 }
+
+
 home-page-container::-webkit-scrollbar {
   display: none;
 }
 
 .home-page-text-content {
-  position: fixed;
+  position: relative;
   align-self: center;
-  padding: 20px;
+  padding: 15vw;
   align-content: center;
   padding-top: 20vh;
   color: #f1f1f1;

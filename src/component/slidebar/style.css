@@ -1,9 +1,10 @@
 .slide-bar{
   background-color: #141414;
   border-right: 1px solid rosybrown ;
-  display: block;
+  position: fixed;
   height: 100vh;
   flex-direction: column;
+  z-index: 2;
 }
 
 
