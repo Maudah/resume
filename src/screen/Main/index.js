@@ -4,12 +4,15 @@ import './style.css';
 import { HashLink } from "react-router-hash-link";
 
 import home from '../../images/house-32.ico'
-import about from '../../images/about-32.ico'
+import about from '../../images/businesswoman-32.ico'
+import portfolio from '../../images/Portfolio-32.ico'
 import github from '../../images/github-10-32.ico'
 import linkedin from '../../images/linkedin-3-32.ico'
 
-import About from '../../screen/About'
-import Home from '../../screen/Home'
+import About from '../About'
+import Home from '../Home'
+import Portfolio from '../Portfolio'
+
 class SideBar extends Component {
 
   render() {
@@ -23,6 +26,9 @@ class SideBar extends Component {
             <HashLink style={{ textDecoration: 'none' }} to="/#AboutSection" smooth><img src={about} alt="about" /></HashLink>
           </div>
           <div style={{ padding: '12px' }}>
+            <HashLink style={{ textDecoration: 'none' }} to="/#PortfolioSection" smooth><img src={portfolio} alt="about" /></HashLink>
+          </div>
+          <div style={{ padding: '12px' }}>
             <Link style={{ textDecoration: 'none' }} to='/github'><img src={github} alt="github" /></Link>
           </div>
           <div style={{ padding: '12px' }}>
@@ -32,6 +38,7 @@ class SideBar extends Component {
         <div>
           <Home />
           <About />
+          <Portfolio/>
         </div>
       </div>
     );
