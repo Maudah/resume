@@ -8,7 +8,6 @@ export default class Home extends Component {
     sideNavLeft: false,
   }
   render() {
-    console.log(startVideo, '0000000');
     return (
       <div id='HomeSection' className='home-page-container'>
         {!startVideo && <Spinner animation="border" variant="dark" />}

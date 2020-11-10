@@ -9,9 +9,6 @@ import WeatherApp from "../../images/WeatherApp.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Home extends Component {
-  state = {
-    sideNavLeft: false,
-  }
   render() {
     return (
       <div id='PortfolioSection' className='portfolio-page-container'>

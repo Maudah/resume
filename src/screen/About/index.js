@@ -4,9 +4,6 @@ import mePhoto from "../../images/me.jpg";
 
 
 export default class About extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className='about-page-container' id='AboutSection'>

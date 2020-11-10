@@ -6,9 +6,6 @@ import certificate3 from "../../images/certificate3.jpg";
 
 
 export default class Certificates extends Component {
-  state = {
-    sideNavLeft: false,
-  }
   render() {
     return (
       <div className='certificates-page-container' id='CertificatesSection'>
