@@ -11,18 +11,6 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 480px) {
-  .home-page-video {
-  min-width: 100vw;
-  min-height: 100vh; 
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
-  }
-}
-
-
 home-page-container::-webkit-scrollbar {
   display: none;
 }
@@ -99,4 +87,15 @@ home-page-container::-webkit-scrollbar {
   0% { opacity:0; }
   66% { opacity:0; }
   100% { opacity:1; }
+}
+
+@media screen and (max-width: 480px) {
+  .home-page-video {
+  min-width: 100vw;
+  min-height: 100vh; 
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  }
 }

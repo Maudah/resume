@@ -1,0 +1,122 @@
+.certificates-page-container{
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.certificates-page-text-content {
+  height: -webkit-fill-available;
+  position: relative;
+  align-self: center;
+  padding: 10vw;
+  align-content: center;
+  padding-top: 10vh;
+  color: #f1f1f1;
+  background: #141414;
+}
+
+.certificates-page-header-text {
+  color: 	#FFC0CB;
+  font-size: 45px;
+}
+
+.certificates-photo{
+  width: 350px;
+  height: auto;
+}
+
+.certificates-content{
+  flex-direction: row;
+   display: flex;
+   padding: 50px;
+   justify-content: space-around;
+   /* background: rgba(255, 192, 203, 0.4); */
+}
+
+#slide4 {
+  position: relative;
+  bottom: -50vh;
+  -webkit-animation: slide4 3s forwards;
+  animation: slide4 1s forwards;
+}
+
+@-webkit-keyframes slide4 {
+  100% { bottom: 0; }
+}
+
+@keyframes slide4 {
+  100% { bottom: 0; }
+}
+
+#slide5 {
+  position: relative;
+  bottom: -50vh;
+  animation-delay: 0.2s;
+  -webkit-animation: slide5 3s forwards;
+  animation: slide5 1s forwards;
+  -webkit-animation-delay: 0.2s;
+}
+
+@-webkit-keyframes slide5 {
+  100% { bottom: 0; }
+}
+
+@keyframes slide5 {
+  100% { bottom: 0; }
+}
+
+#slide6 {
+  position: relative;
+  bottom: -50vh;
+  -webkit-animation: slide6 3s forwards;
+  animation: slide6 1s forwards;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide6 {
+  100% { bottom: 0; }
+}
+
+@keyframes slide6 {
+  100% { bottom: 0; }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .certificates-content{
+    flex-direction: column;
+     display: flex;
+     padding: 0px;
+     padding-top: 10px;
+  }
+  
+.certificates-page-header-text {
+  color: 	#FFC0CB;
+  font-size: 45px;
+  padding-left: 10vw;
+}
+
+.certificates-page-text-content {
+  height: -webkit-fill-available;
+  position: relative;
+  align-self: center;
+  padding: 0vw;
+  align-content: center;
+  padding-top: 10vh;
+  color: #f1f1f1;
+  background: #141414;
+}
+
+.certificates-photo{
+  align-self: center;
+  width: 80vw;
+  height: auto;
+  padding-top: 20px;
+}
+.certificates-page-container{
+  height: 190vh;
+  position: relative;
+  width: 100vw;
+}
+}

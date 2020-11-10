@@ -88,7 +88,7 @@ The blue pin is where the k-means algorithm calculate the estimated fall locatio
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>First Part- A system for synchronizing traffic lights systems in a complicated crossroads.</p>
                     <a href="https://github.com/Maudah/Traffic_lights_system">First part on Git</a>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>Second Part- Implemantation part of RTOS.</p>
-                    <a href="https://github.com/Maudah/Real-Time">Second parton Git</a>
+                    <a href="https://github.com/Maudah/Real-Time">Second part on Git</a>
                   </div>
                 </div>
               </Carousel.Item>

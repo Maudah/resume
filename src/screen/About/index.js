@@ -7,37 +7,6 @@ export default class About extends Component {
   state = {
     sideNavLeft: false,
   }
-  // componentDidMount() {
-  //   let UID = {
-  //     _current: 0,
-  //     getNew: function(){
-  //       this._current++;
-  //       return this._current;
-  //     }
-  //   };
-
-  // HTMLElement.prototype.pseudoStyle = function(element,prop,value){
-  //   var _this = this;
-  //   var _sheetId = "pseudoStyles";
-  //   var _head = document.head || document.getElementsByTagName('head')[0];
-  //   var _sheet = document.getElementById(_sheetId) || document.createElement('style');
-  //   _sheet.id = _sheetId;
-  //   var className = "pseudoStyle" + UID.getNew();
-
-  //   _this.className +=  " "+className; 
-  //   console.log('--------');
-  //   console.log(_sheet);
-
-  //   _sheet.innerHTML += " ."+className+":"+element+"{"+prop+":"+"url('../../images/github-10-32.ico')"+"}";
-  //   console.log(_sheet);
-  //   _head.appendChild(_sheet);
-  //   return this;
-  // };
-  //   var div = document.getElementById("testDiv");
-  //   div.pseudoStyle("before", "content", "url('../../images/about-32.ico')");
-  // }
-
-
   render() {
     return (
       <div className='about-page-container' id='AboutSection'>

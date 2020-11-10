@@ -5,8 +5,14 @@
   height: 100vh;
   flex-direction: column;
   z-index: 2;
+  justify-content: center;
+  display: flex;
 }
-
+.slider-item{
+  padding-top: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
 
 @media screen and (max-width: 480px) {
   .slide-bar{
@@ -17,6 +23,10 @@
     height: 60px;
     flex-direction: row;
   }
+  
+.slider-item{
+  padding: 12px;
+}
 }
 
 
