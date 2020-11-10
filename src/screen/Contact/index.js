@@ -11,9 +11,9 @@ export default class Contact extends Component {
   }
   render() {
     return (
-      <div className='about-page-container' id='ContactSection'>
-        <div className="about-page-text-content">
-          <h1 className='about-page-header-text'>Contact me</h1>
+      <div className='contact-page-container' id='ContactSection'>
+        <div className="contact-page-text-content">
+          <h1 className='contact-page-header-text'>Contact me</h1>
           <div style={{display:'flex', flexDirection:'row', paddingTop: '5vw', justifyContent: 'center'}}>
           <div style={{ padding: '12px' }}>
             <a href="https://github.com/Maudah"><img height='32px' width='32px'src={github} alt="github" /></a>

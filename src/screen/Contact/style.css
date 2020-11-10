@@ -1,0 +1,35 @@
+
+.contact-page-container{
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+.contact-page-text-content {
+  height: -webkit-fill-available;
+  position: relative;
+  align-self: center;
+  padding: 10vw;
+  align-content: center;
+  padding-top: 10vh;
+  color: #f1f1f1;
+  background: #160D11;
+}
+
+
+.contact-page-header-text {
+  color: 	#FFC0CB;
+  font-size: 45px;
+}
+.contact-page-content-text{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+.contact-page-container{
+  height: 180vh;
+  position: relative;
+  width: 100vw;
+}
+
+}
