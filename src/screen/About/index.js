@@ -4,8 +4,8 @@ import mePhoto from "../../images/me.jpg";
 
 
 export default class About extends Component {
-  state = {
-    sideNavLeft: false,
+  constructor(props) {
+    super(props);
   }
   render() {
     return (

@@ -3,7 +3,7 @@
   height: 100vh;
 }
 .home-page-video{
-  max-width: 100vw;
+  max-width: 99vw;
   min-height: 100vh; 
   overflow: hidden;
   position: absolute;
@@ -75,6 +75,7 @@ home-page-container::-webkit-scrollbar {
 #element{
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
   animation: 3s ease 0s normal forwards 1 fadein;
+  margin-top: 20px;
 }
 
 @keyframes fadein{
