@@ -13,6 +13,7 @@ import Home from '../Home'
 import Portfolio from '../Portfolio'
 import Certificates from '../Certificates'
 import Contact from '../Contact'
+import Temp from '../sendEmail'
 import loader from "../../images/Infinity-1s-800px.gif";
 
 import mePhoto from "../../images/me.jpg";
@@ -29,6 +30,7 @@ import mail from '../../images/mail-128.ico'
 import startVideo from "../../images/Home_video.mp4";
 
 import Simulator from "../../images/Simulator.jpg";
+import workTracking from "../../images/workTracking.png";
 import Motors from "../../images/motors.JPG";
 import Missible from "../../images/Prediction-missile-fall.jpg";
 import RTOS from "../../images/Trafficlight.png";
@@ -70,9 +72,10 @@ class SideBar extends Component {
             <img src={loader} alt="me" className='loader-image' />
           </div>}
           {!isLoading && <div>
+            <Temp/>
             <Home startVideo={startVideo} />
             <About mePhoto={mePhoto} />
-            <Portfolio Simulator={Simulator} Motors={Motors} Missible={Missible} RTOS={RTOS} WeatherApp={WeatherApp} />
+            <Portfolio Simulator={Simulator} Motors={Motors} Missible={Missible} RTOS={RTOS} WeatherApp={WeatherApp} workTracking={workTracking} />
             <Certificates certificate1={certificate1} certificate2={certificate2} certificate3={certificate3} />
             <Contact github={github} linkedin={linkedin} phone={phone} mail={mail} />
           </div>}

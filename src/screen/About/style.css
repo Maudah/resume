@@ -145,7 +145,7 @@
   }
   
 .about-page-container{
-  height: 180vh;
+  height: max-content;
   position: relative;
   width: 100vw;
 }

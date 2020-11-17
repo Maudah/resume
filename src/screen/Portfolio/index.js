@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Home extends Component {
   render() {
-    const{Simulator, Motors, Missible,  RTOS , WeatherApp} = this.props;
+    const { Simulator, Motors, Missible, RTOS, WeatherApp, workTracking } = this.props;
     return (
       <div id='PortfolioSection' className='portfolio-page-container'>
         <div className="portfolio-page-text-content">
@@ -31,7 +31,22 @@ export default class Home extends Component {
               <Carousel.Item>
                 <div className='slide-item-content'>
                   <img
-                  className="portfolio-image"
+                    className="portfolio-image"
+                    src={workTracking}
+                    alt="First slide"
+                  />
+                  <div className='slide-text'>
+                    <h4>Working tracking and calculate the monthly salary based on custom settings.</h4>
+                    <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>The user updates entering and exiting hours, the app saves the data and  calculates the monthly salary based on user settings. </p>
+                    <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>React-Native | JavaScript | </p>
+                  </div>
+                </div>
+              </Carousel.Item>
+
+              <Carousel.Item>
+                <div className='slide-item-content'>
+                  <img
+                    className="portfolio-image"
                     src={Motors}
                     alt="First slide"
                   />
@@ -89,7 +104,7 @@ The blue pin is where the k-means algorithm calculate the estimated fall locatio
               <Carousel.Item>
                 <div className='slide-item-content'>
                   <img
-                  className="portfolio-image"
+                    className="portfolio-image"
                     src={WeatherApp}
                     alt="First slide"
                   />

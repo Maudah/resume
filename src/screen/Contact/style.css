@@ -12,7 +12,7 @@
   align-content: center;
   padding-top: 10vh;
   color: #f1f1f1;
-  background: #160D11;
+  background: #141414;
 }
 
 
@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 480px) {
 .contact-page-container{
-  height: 180vh;
+  height: 100vh;
   position: relative;
   width: 100vw;
 }
