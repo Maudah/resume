@@ -54,7 +54,7 @@ export default class Contact extends Component {
 
   render() {
     const { github, linkedin, phone, mail } = this.props;
-    const { name, email, message } = this.state;
+    // const { name, email, message } = this.state;
     // var __html = require('./template.html');
     // var template = { __html: __html };
     return (

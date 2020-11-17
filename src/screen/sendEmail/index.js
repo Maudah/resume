@@ -56,7 +56,7 @@ export default class Temp extends Component {
       })
   }
   render() {
-    const { name, email, message, sent, buttonText, err } = this.state;
+    const { name, email, message, buttonText } = this.state;
     return (
       <>
         <FormControl fullWidth={true}>
