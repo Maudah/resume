@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import './style.css'
 import { Carousel } from 'react-bootstrap';
-import Simulator from "../../images/Simulator.jpg";
-import Motors from "../../images/motors.JPG";
-import Missible from "../../images/Prediction-missile-fall.jpg";
-import RTOS from "../../images/Trafficlight.png";
-import WeatherApp from "../../images/WeatherApp.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Home extends Component {
   render() {
+    const{Simulator, Motors, Missible,  RTOS , WeatherApp} = this.props;
     return (
       <div id='PortfolioSection' className='portfolio-page-container'>
         <div className="portfolio-page-text-content">
@@ -43,7 +39,7 @@ export default class Home extends Component {
                     <h4>Website for the sale of luxury vehicles</h4>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>The project aim is to develop a fullstack project </p>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>Node.js | MongoDB | React | JavaScript | Redux | Socket.io | Passport | Nodemailer | Session | Cookie</p>
-                    <a href="https://github.com/Maudah/Luxury_Motors">The code on Git</a>
+                    <a className='git' href="https://github.com/Maudah/Luxury_Motors">The code on Git</a>
 
                   </div>
                 </div>
@@ -67,7 +63,7 @@ export default class Home extends Component {
                     The red pin is the reports.
 The blue pin is where the k-means algorithm calculate the estimated fall location.</p>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>WPF | GoogleMaps | Visual-Studio | Commads | MVVM</p>
-                    <a href="https://github.com/Maudah/Prediction_missile_fall">The code on Git</a>
+                    <a className='git' href="https://github.com/Maudah/Prediction_missile_fall">The code on Git</a>
 
                   </div>
                 </div>
@@ -83,9 +79,9 @@ The blue pin is where the k-means algorithm calculate the estimated fall locatio
                   <div className='slide-text'>
                     <h4>Real-time</h4>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>First Part- A system for synchronizing traffic lights systems in a complicated crossroads.</p>
-                    <a href="https://github.com/Maudah/Traffic_lights_system">First part on Git</a>
+                    <a className='git' href="https://github.com/Maudah/Traffic_lights_system">First part on Git</a>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>Second Part- Implemantation part of RTOS.</p>
-                    <a href="https://github.com/Maudah/Real-Time">Second part on Git</a>
+                    <a className='git' href="https://github.com/Maudah/Real-Time">Second part on Git</a>
                   </div>
                 </div>
               </Carousel.Item>
@@ -101,7 +97,7 @@ The blue pin is where the k-means algorithm calculate the estimated fall locatio
                     <h4>Weather App</h4>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>This project Display a 5-day weather forecast based on the current user location by using OpenWeatherMap API to fetch weather data.</p>
                     <p style={{ paddingTop: '20px' }} className='portfolio-page-content-text'>React-Native | JavaScript | EXPO | OpenWeatherMap  API</p>
-                    <a href="https://github.com/Maudah/React-Native-WeatherApp">The code on Git</a>
+                    <a className='git' href="https://github.com/Maudah/React-Native-WeatherApp">The code on Git</a>
 
                   </div>
                 </div>

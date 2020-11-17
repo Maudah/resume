@@ -112,10 +112,11 @@
   align-self: center;
   width: 80vw;
   height: auto;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .certificates-page-container{
-  height: 190vh;
+  height: max-content;
   position: relative;
   width: 100vw;
 }

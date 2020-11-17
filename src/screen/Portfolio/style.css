@@ -38,6 +38,9 @@
 .slide-text{
   padding-left: 35px;
 }
+.git{
+  color: #FFC0CB;
+}
 
 @media screen and (max-width: 480px) {
   
@@ -76,41 +79,25 @@
 }
 
 .portfolio-page-container{
-  height: 115vh;
+  height: max-content;
   position: relative;
   width: 100vw;
 }
 
+.carousel-control-prev-icon {
+  padding-top: 20px;
+  align-self: flex-start;
+  background-image: url("../../images/arrow-91-64.ico") !important;
+ }
+ 
+ .carousel-control-next-icon {
+  padding-top: 20px;
+  align-self: flex-start;
+  background-image: url("../../images/arrow-27-64.ico") !important;
+ }
 
 }
 .slide-content{}
-
-/* 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-  color: #160D11;
-  background-color: brown;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-} */
 
 .carousel-control-prev-icon {
   background-image: url("../../images/arrow-91-64.ico") !important;

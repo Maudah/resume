@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 import './style.css';
-import github from '../../images/github-10-128.ico'
-import linkedin from '../../images/linkedin-3-128.ico'
-import phone from '../../images/phone-128.ico'
-import mail from '../../images/mail-128.ico'
 
 export default class Contact extends Component {
   state = {
     sideNavLeft: false,
   }
   render() {
+    const {github, linkedin, phone,  mail}=this.props;
     return (
       <div className='contact-page-container' id='ContactSection'>
         <div className="contact-page-text-content">

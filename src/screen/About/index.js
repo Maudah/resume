@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './style.css';
-import mePhoto from "../../images/me.jpg";
 
 
 export default class About extends Component {
@@ -12,7 +11,7 @@ export default class About extends Component {
           <p id='slide3' className='about-page-content-text'>Infrastructures and DevOps engineer at CEVA .Inc</p>
           <p id='slide3' className='about-page-content-text'>Graduated with honors of B.Sc. in software engineering at JCT.</p>
           <main className='timeline-content'>
-            <img src={mePhoto} alt="me" className='me-photo' />
+            <img src={this.props.mePhoto} alt="me" className='me-photo' />
             <div className='padding-timeline'>
               <p className='timeline' id='jct-icon'>B.Sc. in software  engineering </p>
               <p className='timeline' id='microsoft-icon'>Hackathon with cooperation with Microsoft: developing a system that predicts the chance to get ill

@@ -1,17 +1,12 @@
 import React, { Component } from "react";
 import './style.css'
-import startVideo from "../../images/Home_video.mp4";
-import Spinner from 'react-bootstrap/Spinner';
 
 export default class Home extends Component {
-  state = {
-    sideNavLeft: false,
-  }
   render() {
+    const {startVideo}=this.props;
     return (
       <div id='HomeSection' className='home-page-container'>
-        {!startVideo && <Spinner animation="border" variant="dark" />}
-        {startVideo && <div>
+        <div>
           <video className='home-page-video' autoPlay loop={true} muted={true} data-reactid=".0.1.0.0">
             <source type="video/mp4" data-reactid=".0.1.0.0.0" src={startVideo} />
           </video>
@@ -21,7 +16,7 @@ export default class Home extends Component {
             <h2 id='slide2'>Infrastructures and DevOps engineer at CEVA .Inc</h2>
             <p id='element'>C++ | Python | C | HTML | CSS | React-Native</p>
           </div>
-        </div>}
+        </div>
 
       </div>
     );

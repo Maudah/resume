@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import './style.css';
-import certificate1 from "../../images/certificate1.jpg";
-import certificate2 from "../../images/certificate2.jpg";
-import certificate3 from "../../images/certificate3.jpg";
+
 
 
 export default class Certificates extends Component {
   render() {
+    const {certificate1, certificate2,certificate3}=this.props;
     return (
       <div className='certificates-page-container' id='CertificatesSection'>
         <div className="certificates-page-text-content">

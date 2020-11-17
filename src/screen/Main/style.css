@@ -34,3 +34,17 @@
   width: 10px;
   height: 10px;;
 }
+
+.loader-image{
+  width: 90px;
+  height: auto;
+  align-self: center;
+  padding: 0px;
+}
+.loader-background{
+  width: 100vw;
+  height: 100vh;
+  background-color: #312426;
+  display: flex;
+  justify-content: center;
+}

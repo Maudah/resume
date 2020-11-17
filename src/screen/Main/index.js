@@ -13,9 +13,39 @@ import Home from '../Home'
 import Portfolio from '../Portfolio'
 import Certificates from '../Certificates'
 import Contact from '../Contact'
+import loader from "../../images/Infinity-1s-800px.gif";
+
+import mePhoto from "../../images/me.jpg";
+
+import certificate1 from "../../images/certificate1.jpg";
+import certificate2 from "../../images/certificate2.jpg";
+import certificate3 from "../../images/certificate3.jpg";
+
+import github from '../../images/github-10-128.ico'
+import linkedin from '../../images/linkedin-3-128.ico'
+import phone from '../../images/phone-128.ico'
+import mail from '../../images/mail-128.ico'
+
+import startVideo from "../../images/Home_video.mp4";
+
+import Simulator from "../../images/Simulator.jpg";
+import Motors from "../../images/motors.JPG";
+import Missible from "../../images/Prediction-missile-fall.jpg";
+import RTOS from "../../images/Trafficlight.png";
+import WeatherApp from "../../images/WeatherApp.png";
 
 class SideBar extends Component {
+  constructor() {
+    super();
+    this.state = { isLoading: true }
+  }
+
+  componentDidMount() {
+    console.log('here');
+    this.setState({ isLoading: false });
+  }
   render() {
+    const { isLoading } = this.state;
     return (
       <div className='App-container'>
         <div className='slide-bar'>
@@ -36,11 +66,16 @@ class SideBar extends Component {
           </div>
         </div>
         <div>
-          <Home />
-          <About />
-          <Portfolio />
-          <Certificates/>
-          <Contact/>
+          {isLoading && <div className='loader-background'>
+            <img src={loader} alt="me" className='loader-image' />
+          </div>}
+          {!isLoading && <div>
+            <Home startVideo={startVideo} />
+            <About mePhoto={mePhoto} />
+            <Portfolio Simulator={Simulator} Motors={Motors} Missible={Missible} RTOS={RTOS} WeatherApp={WeatherApp} />
+            <Certificates certificate1={certificate1} certificate2={certificate2} certificate3={certificate3} />
+            <Contact github={github} linkedin={linkedin} phone={phone} mail={mail} />
+          </div>}
         </div>
       </div>
     );
