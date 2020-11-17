@@ -13,7 +13,6 @@ import Home from '../Home'
 import Portfolio from '../Portfolio'
 import Certificates from '../Certificates'
 import Contact from '../Contact'
-import Temp from '../sendEmail'
 import loader from "../../images/Infinity-1s-800px.gif";
 
 import mePhoto from "../../images/me.jpg";
@@ -72,7 +71,6 @@ class SideBar extends Component {
             <img src={loader} alt="me" className='loader-image' />
           </div>}
           {!isLoading && <div>
-            <Temp/>
             <Home startVideo={startVideo} />
             <About mePhoto={mePhoto} />
             <Portfolio Simulator={Simulator} Motors={Motors} Missible={Missible} RTOS={RTOS} WeatherApp={WeatherApp} workTracking={workTracking} />
