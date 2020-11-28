@@ -5,16 +5,16 @@ exports.handler = function (event, context, callback) {
     let data = JSON.parse(event.body)
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.zoho.eu',
+        host: 'smtp.zoho.com',
         port: 465,
         secure: true, 
         auth: {
                 user:'lital.maudah@zohomail.com',
-                pass:'lital1122'
+                pass:'jmYh 1tKK rqLb'
         }
     });
     transporter.sendMail({
-        from: 'lital.maudah@zohomail.com',
+        from: 'lital.maudah@gmail.com',
         to: 'lital.maudah@gmail.com',
         subject: `Sending with React, Nodemailer and Netlify`,
         html: `
