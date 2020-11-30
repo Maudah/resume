@@ -6,7 +6,7 @@ import home from '../../images/house-128.ico'
 import about from '../../images/businesswoman-128.ico'
 import portfolio from '../../images/Portfolio-32.ico'
 import certificates from '../../images/pages-1-128.ico'
-import contact from '../../images/phone-20-128.ico'
+import contact from '../../images/phone-128.ico'
 
 import About from '../About'
 import Home from '../Home'
@@ -20,6 +20,7 @@ import mePhoto from "../../images/me.jpg";
 import certificate1 from "../../images/certificate1.jpg";
 import certificate2 from "../../images/certificate2.jpg";
 import certificate3 from "../../images/certificate3.jpg";
+import certificate4 from "../../images/certificate4.JPG";
 
 import github from '../../images/github-10-128.ico'
 import linkedin from '../../images/linkedin-3-128.ico'
@@ -34,6 +35,7 @@ import Motors from "../../images/motors.JPG";
 import Missible from "../../images/Prediction-missile-fall.jpg";
 import RTOS from "../../images/Trafficlight.png";
 import WeatherApp from "../../images/WeatherApp.png";
+import m_map from "../../images/map.jpg";
 
 class SideBar extends Component {
   constructor() {
@@ -74,8 +76,8 @@ class SideBar extends Component {
             <Home startVideo={startVideo} />
             <About mePhoto={mePhoto} />
             <Portfolio Simulator={Simulator} Motors={Motors} Missible={Missible} RTOS={RTOS} WeatherApp={WeatherApp} workTracking={workTracking} />
-            <Certificates certificate1={certificate1} certificate2={certificate2} certificate3={certificate3} />
-            <Contact github={github} linkedin={linkedin} phone={phone} mail={mail} />
+            <Certificates certificate1={certificate1} certificate2={certificate2} certificate3={certificate3} certificate4={certificate4} />
+            <Contact map={m_map} github={github} linkedin={linkedin} phone={phone} mail={mail} />
           </div>}
         </div>
       </div>

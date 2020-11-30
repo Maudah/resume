@@ -27,6 +27,11 @@
 .slider-item{
   padding: 12px;
 }
+.App-container {
+  flex-direction: column;
+  display: flex; 
+  overflow-x: hidden;
+}
 }
 
 
@@ -47,4 +52,11 @@
   background-color: #312426;
   display: flex;
   justify-content: center;
+}
+
+
+.App-container{
+  flex-direction: row;
+  display: flex;
+  overflow-x: hidden;
 }

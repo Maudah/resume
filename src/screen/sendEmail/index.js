@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import axios from 'axios'
+import './style.css';
 
-import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button"
 import FormControl from "@material-ui/core/FormControl"
 export default class Temp extends Component {
   constructor() {
     super();
-    this.state = { name: '', email: '', message: '', sent: false, buttonText: 'Submit', err: '' }
+    this.state = { name: '', email: '', message: '', sent: false, buttonText: 'Send email', err: '' }
   }
   handleChange = (e) => {
     const { name, value } = e.target
@@ -15,8 +15,8 @@ export default class Temp extends Component {
       [name]: value
     })
   }
-  resetForm(){
-    this.setState({ name: '', email: '', message: '', sent: false, buttonText: 'Submit', err: '' })
+  resetForm() {
+    this.setState({ name: '', email: '', message: '', sent: false, buttonText: 'Send email', err: '' })
   }
   formSubmit = (e) => {
     e.preventDefault();
@@ -58,22 +58,22 @@ export default class Temp extends Component {
   render() {
     const { name, email, message, buttonText } = this.state;
     return (
-      <>
+      <view className='send-email-container'>
         <FormControl fullWidth={true}>
-          <TextField required label="Full name" variant="filled" id="full-name" name="name" className="form-field" value={name} onChange={this.handleChange} />
+          <input required placeholder="Full name"  id="full-name" name="name" className="form-field" value={name} onChange={this.handleChange} />
+        </FormControl>        
+        <FormControl fullWidth={true}>
+          <input required placeholder="Email" id="email" name="email" className="form-field" value={email} onChange={this.handleChange} />
         </FormControl>
         <FormControl fullWidth={true}>
-          <TextField required label="Email" id="email" name="email" variant="filled" className="form-field" value={email} onChange={this.handleChange} />
+          <textarea required placeholder="Message" name="message" className="form-field" multiline={true} rows="10" value={message} onChange={this.handleChange} />
         </FormControl>
-        <FormControl fullWidth={true}>
-          <TextField required label="Message" variant="filled" name="message" multiline={true} rows="10" value={message} onChange={this.handleChange} />
+        <FormControl style={{ paddingTop: 15 }}>
+          <button style={{ backgroundColor: '#141414' , borderWidth: 2, borderColor: '#FFC0CB', borderRadius: 0}} onClick={this.formSubmit}>
+            <label style={{color:'white', margin: 0, paddingRight: 10, paddingLeft: 10, paddingTop: 3, paddingBottom: 3}}>{buttonText}</label>
+            </button>
         </FormControl>
-        <FormControl>
-          <div className="form-submit">
-          <Button variant="contained" color="primary" onClick={this.formSubmit}>{buttonText}</Button>
-          </div>
-        </FormControl>
-      </>
+      </view>
     )
   }
 }

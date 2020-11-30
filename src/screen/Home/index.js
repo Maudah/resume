@@ -13,7 +13,7 @@ export default class Home extends Component {
           <div className="home-page-text-content">
             <h1 id='slide'>Hi, </h1>
             <h1 id='slide1'>I'm Lital </h1>
-            <h2 id='slide2'>Infrastructures and DevOps engineer at CEVA .Inc</h2>
+            <h2 id='slide2'>DevOps and infrastructures engineer at CEVA .Inc</h2>
             <p id='element'>C++ | Python | C | HTML | CSS | React-Native</p>
           </div>
         </div>

@@ -21,8 +21,8 @@
 }
 
 .certificates-photo{
-  width: 350px;
-  height: auto;
+  width: auto;
+  height: 60vh;
 }
 
 .certificates-content{

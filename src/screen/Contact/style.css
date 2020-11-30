@@ -12,24 +12,49 @@
   align-content: center;
   padding-top: 10vh;
   color: #f1f1f1;
-  /* background: #141414; */
+  background: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
+.contact-page-map-form{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 .contact-page-header-text {
   color: 	#FFC0CB;
   font-size: 45px;
+  display: flex;
 }
 .contact-page-content-text{
   font-size: 20px;
   font-weight: 400;
 }
+.map-photo{
+  width: auto;
+  height: 50vh;
+  padding-left: 20px;
+}
 
 @media screen and (max-width: 480px) {
 .contact-page-container{
-  height: 100vh;
+  height: 130vh;
   position: relative;
-  width: 100vw;
 }
-
+.map-photo{
+  padding-left: 0px;
+  width: 80vw;
+  height: auto;
+  padding-top: 10px;
+  align-self: center;
+}
+.contact-page-map-form{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 }
