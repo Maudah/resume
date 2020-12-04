@@ -16,7 +16,7 @@ exports.handler = function (event, context, callback) {
     });
     transporter.sendMail({
         from: 'lital.maudah@gmail.com',
-        to: 'mhagit55@gmail.com',
+        to: 'lital.maudah@gmail.com',
         subject: `Sending with React, Nodemailer and Netlify`,
         html: `<p>Blaa</p>`
         // `
