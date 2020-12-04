@@ -18,7 +18,7 @@ exports.handler = function (event, context, callback) {
         from: 'lital.maudah@gmail.com',
         to: 'mhagit55@gmail.com',
         subject: `Sending with React, Nodemailer and Netlify`,
-        html: <p>Blaa</p>
+        html: `<p>Blaa</p>`
         // `
         //     <h3>Email from ${data.name} ${data.email}<h3>
         //     <p>${data.message}<p>
