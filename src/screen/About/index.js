@@ -5,10 +5,10 @@ import './style.css';
 export default class About extends Component {
   render() {
     return (
-      <div className='about-page-container' id='AboutSection'>
+      <div className='about-page-container' id='AboutSection' onSho>
         <div className="about-page-text-content">
           <h1 className='about-page-header-text'>About me</h1>
-          <p id='slide3' className='about-page-content-text'>Infrastructures and DevOps engineer at CEVA .Inc</p>
+          <p id='slide3' className='about-page-content-text'>DevOps and infrastructures engineer at CEVA .Inc</p>
           <p id='slide3' className='about-page-content-text'>Graduated with honors of B.Sc. in software engineering at JCT.</p>
           <main className='timeline-content'>
             <img src={this.props.mePhoto} alt="me" className='me-photo' />
