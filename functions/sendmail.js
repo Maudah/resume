@@ -7,7 +7,8 @@ exports.handler = function (event, context, callback) {
     let transporter = nodemailer.createTransport({
         host: 'smtp.zoho.com',
         port: 465,
-        secure: true, 
+        secure: false,
+        rejectUnauthorized:false,
         auth: {
                 user:'lital.maudah@zohomail.com',
                 pass:'jmYh 1tKK rqLb'
@@ -17,10 +18,11 @@ exports.handler = function (event, context, callback) {
         from: 'lital.maudah@gmail.com',
         to: 'mhagit55@gmail.com',
         subject: `Sending with React, Nodemailer and Netlify`,
-        html: `
-            <h3>Email from ${data.name} ${data.email}<h3>
-            <p>${data.message}<p>
-            `
+        html: <p>Blaa</p>
+        // `
+        //     <h3>Email from ${data.name} ${data.email}<h3>
+        //     <p>${data.message}<p>
+        //     `
     }, function (error, info) {
         if (error) {
             callback(error);
