@@ -9,7 +9,7 @@ export default class Home extends Component {
       <div id='HomeSection' className='home-page-container'>
         <Fragment>
           <div>
-            <video className='home-page-video' autoPlay loop={true} muted={true} data-reactid=".0.1.0.0">
+            <video className='home-page-video' autoPlay loop={true} poster="images/FFFFFF-0.png" muted={true} data-reactid=".0.1.0.0">
               <source type="video/mp4" data-reactid=".0.1.0.0.0" src={startVideo} />
             </video>
             <div className="home-page-text-content">

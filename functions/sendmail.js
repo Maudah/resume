@@ -8,7 +8,6 @@ exports.handler = function (event, context, callback) {
         host: 'smtp.zoho.com',
         port: 465,
         secure: false,
-        rejectUnauthorized:false,
         auth: {
                 user:'lital.maudah@zohomail.com',
                 pass:'jmYh 1tKK rqLb'
@@ -32,6 +31,7 @@ exports.handler = function (event, context, callback) {
                 body: JSON.stringify({
                     'result': 'success'
                 })
+                
             });
         }
     });

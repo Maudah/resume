@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import axios from 'axios'
 import './style.css';
-
-// import Button from "@material-ui/core/Button"
+import * as emailjs from 'emailjs-com'
 import FormControl from "@material-ui/core/FormControl"
 export default class Temp extends Component {
   constructor() {
@@ -23,55 +21,48 @@ export default class Temp extends Component {
     this.setState({
       buttonText: 'Sending...'
     })
-    const { name, email, message, sent, buttonText, err } = this.state;
-    const data = { name, email, message, sent, buttonText, err };
-    axios.post('/api/sendmail', data)
-      .then(res => {
-        if (res.data.result !== 'success') {
-          this.setState({
-            ...data,
-            buttonText: 'Failed to send',
-            sent: false,
-            err: 'fail'
-          })
-          setTimeout(() => {
-            this.resetForm()
-          }, 6000)
-        } else {
-          this.setState({
-            sent: true,
-            buttonText: 'Sent',
-            err: 'success'
-          })
-          setTimeout(() => {
-            this.resetForm();
-          }, 6000)
-        }
-      }).catch((err) => {
-        this.setState({
-          buttonText: 'Failed to send',
-          err: 'fail'
-        })
-
-      })
+    const name = 'Lital'
+    const email = 'lital.maudah@gmail.com'
+    // const message =  document.getElementById('root').innerHTML
+    const message = this.state.message
+    let templateParams = {
+      to_name: name,
+      to_email: email,
+      reply_to: this.state.email,
+      message: message,
+      from_name: this.state.name
+    }
+    emailjs.init('user_WsS0WKeLjgVyvvbr1OZwo');
+    emailjs.send(
+      'service_wkv211w',
+      'template_bampdel',
+      templateParams
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        this.setState({ buttonText: 'Sent' })
+      }, (error) => {
+        this.setState({ buttonText: 'Failed to send' })
+        console.log('FAILED...', error);
+      });
   }
   render() {
     const { name, email, message, buttonText } = this.state;
     return (
       <view className='send-email-container'>
         <FormControl fullWidth={true}>
-          <input required placeholder="Full name"  id="full-name" name="name" className="form-field" value={name} onChange={this.handleChange} />
-        </FormControl>        
+          <input required placeholder="Full name" id="full-name" name="name" className="form-field" value={name} onChange={this.handleChange} />
+        </FormControl>
         <FormControl fullWidth={true}>
           <input required placeholder="Email" id="email" name="email" className="form-field" value={email} onChange={this.handleChange} />
         </FormControl>
         <FormControl fullWidth={true}>
-          <textarea required placeholder="Message" name="message" className="form-field" multiline={true} rows="10" value={message} onChange={this.handleChange} />
+          <textarea style={{ color: 'white' }} required placeholder="Message" name="message" className="form-field" multiline={true} rows="10" value={message} onChange={this.handleChange} />
         </FormControl>
         <FormControl style={{ paddingTop: 15 }}>
-          <button style={{ backgroundColor: '#141414' , borderWidth: 2, borderColor: '#FFC0CB', borderRadius: 0}} onClick={this.formSubmit}>
-            <label style={{color:'white', margin: 0, paddingRight: 10, paddingLeft: 10, paddingTop: 3, paddingBottom: 3}}>{buttonText}</label>
-            </button>
+          <button style={{ backgroundColor: '#141414', borderWidth: 2, borderColor: '#FFC0CB', borderRadius: 0 }} onClick={this.formSubmit}>
+            <label style={{ color: 'white', margin: 0, paddingRight: 10, paddingLeft: 10, paddingTop: 3, paddingBottom: 3 }}>{buttonText}</label>
+          </button>
         </FormControl>
       </view>
     )
