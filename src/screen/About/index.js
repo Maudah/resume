@@ -18,7 +18,7 @@ export default class About extends Component {
 diabetes type 2 by behavioral symptoms.</p>
               <p className='timeline' id='upstream-icon'>Fontend developer- The product, C4, detects cybersecurity issues and other abnormal behaviors of the client’s vehicles.
 Developed a professional simulation tool</p>
-              <p className='timeline' id='ceva-icon'>Infrastructures and DevOps engineering </p>
+              <p className='timeline' id='ceva-icon'>DevOps and infrastructures engineer  </p>
             </div>
           </main>
         </div>
